@@ -2,7 +2,7 @@
 	<v-app>
 		<AppHeader /> <!-- Подключаем компонент AppHeader ("шапка" сайта) -->
 
-		<v-main class="grey lighten-1"> <!-- v-main - аналог тега main в html -->
+		<v-main class="grey lighten-2"> <!-- v-main - аналог тега main в html -->
 			<v-container>
 				<!-- "component" - специальный тег во Vue.js, который позволяет отображать
 				любой компонент динамически (в свойстве ":is" передаём название компонента).

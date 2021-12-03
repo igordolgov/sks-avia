@@ -1,8 +1,6 @@
 <!-- Карточка товара из 1-й вкладки -->
 <template>
 	<div>
-		
-
 		<div class="pa-0">
 			<!-- Меню навигации. "Хлебные крошки" -->
 			<!-- <v-row>
@@ -35,7 +33,7 @@
 				<!-- Фотографии товара -->
 				<v-col
 					cols="12" sm="7" md="9" lg="7" xl="7"
-					class="pa-0 mb-3"
+					class="pa-0 mb-3 qwerty"
 				>
 					<v-sheet
 						class="cards-height
@@ -209,6 +207,11 @@ export default {
 </script>
 
 <style>
+/* .qwerty {
+	background-image: url('./assets/background-main.jpg');
+	background-repeat: repeat;
+	background-size: contain;
+} */
 /* .v-carousel__controls {
 	transform: translateY(12px) !important;
 	padding-top: 12px !important;

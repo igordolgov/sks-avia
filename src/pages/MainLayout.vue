@@ -32,7 +32,7 @@
 		</v-col>
 		
 		<v-col cols="8" sm="9" md="10" class="pa-0">
-			<router-view class="grey lighten-2" />
+			<router-view style="background: linear-gradient(white, white, lightgray);" />
 		</v-col>
 	</v-row>
 </template>
