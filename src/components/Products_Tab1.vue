@@ -29,6 +29,7 @@
 						min-height="188px"
 						class="pa-2"
 					>
+						
 						<!-- Картинка карточки в каталоге -->
 						<v-card class="mb-1 grey lighten-2">
 							<v-img

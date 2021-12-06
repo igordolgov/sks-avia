@@ -33,7 +33,7 @@
 				<!-- Фотографии товара -->
 				<v-col
 					cols="12" sm="7" md="9" lg="7" xl="7"
-					class="pa-0 mb-3 qwerty"
+					class="pa-0 mb-0 qwerty"
 				>
 					<v-sheet
 						class="cards-height
@@ -67,12 +67,12 @@
 
 				<!-- Описание товара -->
 				<v-col
-					col="12" sm="3" md="2" xl="2"
-					class="py-0 px-sm-0 pb-sm-3 pr-lg-0 mx-sm-0"
+					col="12" md="2" xl="2"
+					class="pa-0 mr-sm-16 ml-md-0"
 				>
 					<v-sheet
-						class="fill-height pa-2 mx-sm-auto
-						elevation-10 rounded-lg">
+						class="fill-height pa-2 ma-sm-auto
+						elevation-0">
 
 						<!-- Название товара -->
 						<span
@@ -85,7 +85,7 @@
 							{{ product.title }}
 						</span>
 
-						<!-- Описание товара -->
+						<!-- Описание -->
 						<span
 							class="
 								d-block
