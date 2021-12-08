@@ -6,8 +6,8 @@
 			<!-- <v-row>
 				<v-col class="pb-0">
 					<v-breadcrumbs
-						:items="items" 
-						class="grey lighten-3 
+						:items="items"
+						class="grey lighten-3
 						py-0 px-2 elevation-6 rounded-lg"
 					>
 						<template v-slot:item="{ item }">
@@ -29,7 +29,6 @@
 				class="pb-0"
 				justify="center"
 			>
-
 				<!-- Фотографии товара -->
 				<v-col
 					cols="12" sm="7" md="9" lg="7" xl="7"
@@ -59,7 +58,7 @@
 								:aspect-ratio="1"
 							>
 							</v-carousel-item>
-							
+
 							<ButtonBack />
 						</v-carousel>
 					</v-sheet>
@@ -100,8 +99,8 @@
 							<span
 								v-if="product.quantity > 0"
 								class="
-									d-block 
-									pl-2 pb-0 mb-0 
+									d-block
+									pl-2 pb-0 mb-0
 									text-md-body-1"
 							>
 								Кол-во: {{ product.quantity }} шт.
@@ -123,7 +122,7 @@
 							<span
 								class="
 									d-block
-									pl-2 pb-0 mb-0 
+									pl-2 pb-0 mb-0
 									text-md-body-1"
 							>
 								{{ product.condition }}
@@ -133,7 +132,7 @@
 							<span
 								class="
 									d-block
-									pl-2 pb-1 mb-0 
+									pl-2 pb-1 mb-0
 									text-md-body-1"
 							>
 								Цена: {{ product.price }} ₽
@@ -155,63 +154,58 @@ import categories from "@/data/categories.js";
 // import eventBus from '@/eventBus';
 
 export default {
-  name: "Tab1_Cards",
+	name: "Tab1_Cards",
 
-  props: ["pageParams"],
+	props: ["pageParams"],
 
-  components: {
-    ButtonBack,
-  },
-  
-  data: () => ({
-    model: 0,
-    products: products,
-    categories: categories,
-	items: [
-        {
-          text: 'Главная',
-          disabled: false,
-          href: '/',
-        },
-        {
-          text: 'Моторы',
-          disabled: false,
-          href: '/motors',
-        },
-        {
-          text: ' ',
-          disabled: true,
-          href: '/product1',
-        },
-      ],
-  }),
+	components: {
+		ButtonBack,
+	},
 
-  computed: {
-    // Информация о товаре
-    product() {
-      // Фильтруем список товаров и оставляем тот товар, который просматриваем,
-      // то есть у которого id совпадает с id переданным через входные параметры
-      return products.motors.find(
-        (product) => product.id === this.pageParams.id
-      );
-    },
-    category() {
-      // Фильтруем список категорий и оставляем ту, у которой идентификатор (id)
-      // совпадает c id категории товаров
-      return categories.find(
-        (category) => category.id === this.product.categoryId
-      );
-    },
-  },
+	data: () => ({
+		model: 0,
+		products: products,
+		categories: categories,
+		items: [
+			{
+				text: 'Главная',
+				disabled: false,
+				href: '/',
+			},
+			{
+				text: 'Моторы',
+				disabled: false,
+				href: '/motors',
+			},
+			{
+				text: ' ',
+				disabled: true,
+				href: '/product1',
+			},
+		],
+	}),
+
+	computed: {
+		// Информация о товаре
+		product() {
+		/* Фильтруем список товаров и оставляем тот товар, который просматриваем,
+		то есть у которого id совпадает с id переданным через входные параметры */
+			return products.motors.find(
+				(product) => product.id === this.pageParams.id
+			);
+		},
+		category() {
+		/* Фильтруем список категорий и оставляем ту, у которой идентификатор (id)
+		совпадает c id категории товаров */
+			return categories.find(
+				(category) => category.id === this.product.categoryId
+			);
+		},
+	},
 };
 </script>
 
 <style>
-/* .qwerty {
-	background-image: url('./assets/background-main.jpg');
-	background-repeat: repeat;
-	background-size: contain;
-} */
 /* .v-carousel__controls {
 	transform: translateY(12px) !important;
 	padding-top: 12px !important;
@@ -277,14 +271,14 @@ export default {
 	}
 
 	@media (min-width: 640px) and (max-width: 900px) and (orientation: portrait) {
-		.cards-height { 
+		.cards-height {
 			height: 416px !important;
 			width: 416px !important;
 		}
 	}
 
 	@media (min-width: 740px) and (max-width: 1023px) and (orientation: landscape) {
-		.cards-height { 
+		.cards-height {
 			height: 300px !important;
 			width: 300px !important;
 		}

@@ -74,6 +74,7 @@ export default {
 			currentPageParams: {},
 		}
 	},
+	
 	methods: {
 		// Переход по страницам
 		gotoPage(pageName, pageParams) {
@@ -85,6 +86,7 @@ export default {
 	created() {
 		eventBus.$on('gotoPage', (pageName, pageParams) => this.gotoPage(pageName, pageParams))
 	},
+
 	computed: {
 		/* Вычисляемое свойство, которое возвращает название компонента в зависимости
 		от выбранной страницы (в списке "routes"), иначе возвращает 'NotFoundPage' */

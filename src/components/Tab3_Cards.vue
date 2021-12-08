@@ -1,15 +1,13 @@
 <!-- Карточка товара из 3-й вкладки -->
 <template>
 	<div>
-		
-
 		<div class="pa-0">
 			<!-- Меню навигации. "Хлебные крошки" -->
 			<!-- <v-row>
 				<v-col class="pb-0">
 					<v-breadcrumbs
-						:items="items" 
-						class="grey lighten-3 
+						:items="items"
+						class="grey lighten-3
 						py-0 px-2 elevation-6 rounded-lg"
 					>
 						<template v-slot:item="{ item }">
@@ -35,7 +33,7 @@
 				<!-- Фотографии товара -->
 				<v-col
 					cols="12" sm="7" md="9" lg="7" xl="7"
-					class="pa-0 mb-3"
+					class="pa-0 mb-0 qwerty"
 				>
 					<v-sheet
 						class="cards-height
@@ -61,7 +59,7 @@
 								:aspect-ratio="1"
 							>
 							</v-carousel-item>
-							
+
 							<ButtonBack />
 						</v-carousel>
 					</v-sheet>
@@ -69,12 +67,12 @@
 
 				<!-- Описание товара -->
 				<v-col
-					col="12" sm="3" md="2" xl="2"
-					class="py-0 px-sm-0 pb-sm-3 pr-lg-0 mx-sm-0"
+					col="12" md="2" xl="2"
+					class="pa-0 mr-sm-16 ml-md-0"
 				>
 					<v-sheet
-						class="fill-height pa-2 mx-sm-auto
-						elevation-10 rounded-lg">
+						class="fill-height pa-2 ma-sm-auto
+						elevation-0">
 
 						<!-- Название товара -->
 						<span
@@ -87,7 +85,7 @@
 							{{ product.title }}
 						</span>
 
-						<!-- Описание товара -->
+						<!-- Описание -->
 						<span
 							class="
 								d-block
@@ -102,8 +100,8 @@
 							<span
 								v-if="product.quantity > 0"
 								class="
-									d-block 
-									pl-2 pb-0 mb-0 
+									d-block
+									pl-2 pb-0 mb-0
 									text-md-body-1"
 							>
 								Кол-во: {{ product.quantity }} шт.
@@ -125,7 +123,7 @@
 							<span
 								class="
 									d-block
-									pl-2 pb-0 mb-0 
+									pl-2 pb-0 mb-0
 									text-md-body-1"
 							>
 								{{ product.condition }}
@@ -135,7 +133,7 @@
 							<span
 								class="
 									d-block
-									pl-2 pb-1 mb-0 
+									pl-2 pb-1 mb-0
 									text-md-body-1"
 							>
 								Цена: {{ product.price }} ₽
@@ -157,57 +155,146 @@ import categories from "@/data/categories.js";
 // import eventBus from '@/eventBus';
 
 export default {
-  name: "Tab3_Cards",
+	name: "Tab3_Cards",
 
-  props: ["pageParams"],
+	props: ["pageParams"],
 
-  components: {
-    ButtonBack,
-  },
-  
-  data: () => ({
-    model: 0,
-    products: products,
-    categories: categories,
-	items: [
-        {
-          text: 'Главная',
-          disabled: false,
-          href: '/',
-        },
-        {
-          text: 'Моторы',
-          disabled: false,
-          href: '/motors',
-        },
-        {
-          text: ' ',
-          disabled: true,
-          href: '/product1',
-        },
-      ],
-  }),
+	components: {
+		ButtonBack,
+	},
 
-  computed: {
-    // Информация о товаре
-    product() {
-      // Фильтруем список товаров и оставляем тот товар, который просматриваем,
-      // то есть у которого id совпадает с id переданным через входные параметры
-      return products.starters.find(
-        (product) => product.id === this.pageParams.id
-      );
-    },
-    category() {
-      // Фильтруем список категорий и оставляем ту, у которой идентификатор (id)
-      // совпадает c id категории товаров
-      return categories.find(
-        (category) => category.id === this.product.categoryId
-      );
-    },
-  },
+	data: () => ({
+		model: 0,
+		products: products,
+		categories: categories,
+		items: [
+			{
+				text: 'Главная',
+				disabled: false,
+				href: '/',
+			},
+			{
+				text: 'Моторы',
+				disabled: false,
+				href: '/motors',
+			},
+			{
+				text: ' ',
+				disabled: true,
+				href: '/product1',
+			},
+		],
+	}),
+
+	computed: {
+		// Информация о товаре
+		product() {
+		// Фильтруем список товаров и оставляем тот товар, который просматриваем,
+		// то есть у которого id совпадает с id переданным через входные параметры
+			return products.starters.find(
+				(product) => product.id === this.pageParams.id
+			);
+		},
+		category() {
+		// Фильтруем список категорий и оставляем ту, у которой идентификатор (id)
+		// совпадает c id категории товаров
+			return categories.find(
+				(category) => category.id === this.product.categoryId
+			);
+		},
+	},
 };
 </script>
 
 <style>
+/* .v-carousel__controls {
+	transform: translateY(12px) !important;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+} */
 
+	.mdi-chevron-right,
+	.mdi-chevron-left {
+		color: white !important;
+	}
+
+	.mdi-minus {
+		color: black !important;
+	}
+
+	/* @media (min-width: 1800px) {
+		.cards-height {
+			height: 1000px !important;
+			width: 1000px !important;
+		}
+	} */
+
+	@media (min-width: 1900px) {
+		.cards-height {
+			height: 850px !important;
+			width: 850px !important;
+		}
+	}
+
+	@media (min-width: 1060px) and (max-width: 1920px) and (orientation: portrait) {
+		.cards-height {
+			height: 860px !important;
+			width: 860px !important;
+		}
+	}
+
+	@media (min-width: 1179px) and (max-width: 1920px) and (orientation: portrait) {
+		.cards-height {
+			height: 754px !important;
+			width: 754px !important;
+		}
+	}
+
+	@media (min-width: 1179px) and (max-width: 1919px) and (orientation: landscape) {
+		.cards-height {
+			height: 590px !important;
+			width: 590px !important;
+		}
+	}
+
+	@media (min-width: 1024px) and (max-width: 1180px) and (orientation: landscape) {
+		.cards-height {
+			height: 700px !important;
+			width: 700px !important;
+		}
+	}
+
+	@media (min-width: 640px) and (max-width: 1023px)  and (orientation: landscape) {
+		.cards-height {
+			height: 360px !important;
+			width: 360px !important;
+		}
+	}
+
+	@media (min-width: 640px) and (max-width: 900px) and (orientation: portrait) {
+		.cards-height {
+			height: 416px !important;
+			width: 416px !important;
+		}
+	}
+
+	@media (min-width: 740px) and (max-width: 1023px) and (orientation: landscape) {
+		.cards-height {
+			height: 300px !important;
+			width: 300px !important;
+		}
+	}
+
+	@media (min-width: 640px) and (max-width: 680px) and (orientation: landscape) {
+		.cards-height {
+			height: 290px !important;
+			width: 290px !important;
+		}
+	}
+
+	@media (max-width: 639px) and (orientation: portrait) {
+		.cards-height {
+			width: 100% !important;
+		}
+	}
 </style>
