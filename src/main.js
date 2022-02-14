@@ -6,7 +6,7 @@ import router from "./router";
 Vue.config.productionTip = false;
 
 new Vue({
-	vuetify,
-	router, // добавляем роутер
-	render: (h) => h(App),
+    vuetify,
+    router, // добавляем возможность использования роутера
+    render: (h) => h(App),
 }).$mount("#app");

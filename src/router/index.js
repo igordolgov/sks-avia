@@ -1,66 +1,68 @@
 // Маршрутизатор для Vue
 import Vue from "vue";
 import VueRouter from "vue-router";
-import NotFoundPage from "@/pages/NotFoundPage.vue";
+// Импортируем компоненты для возможности их использования в этом файле
 import MainPage from "@/pages/MainPage.vue";
-import Products_Tab1 from "@/components/Products_Tab1.vue";
-import Products_Tab2 from "@/components/Products_Tab2.vue";
-import Products_Tab3 from "@/components/Products_Tab3.vue";
-import Tab1_Cards from "@/components/Tab1_Cards.vue";
-import Tab2_Cards from "@/components/Tab2_Cards.vue";
-import Tab3_Cards from "@/components/Tab3_Cards.vue";
+import ProductList from "@/pages/ProductList.vue";
+import ProductItem from "@/components/ProductItem.vue";
+import NotFoundPage from "@/pages/NotFoundPage.vue";
+// Импортируем справочник товаров (в переменную 'products'):
+import products from "@/data/products.js";
 
 Vue.use(VueRouter); // Сообщаем Vue, что будем использовать vue-router
 
 const routes = [
-	// Создаём маршруты (в виде объектов)
-	{
-		path: "/",
-		name: "main",
-		component: MainPage,
-	},
-	{
-		path: "/motors",
-		name: "motors",
-		component: Products_Tab1,
-	},
-	{
-		path: "/propellers",
-		name: "propellers",
-		component: Products_Tab2,
-	},
-	{
-		path: "/starters",
-		name: "starters",
-		component: Products_Tab3,
-	},
-	{
-		path: "/product1", // путь в адресной строке
-		name: "product1", // ключевое название страницы
-		component: Tab1_Cards, //
-	},
-	{
-		path: "/product2",
-		name: "product2",
-		component: Tab2_Cards,
-	},
-	{
-		path: "/product3",
-		name: "product3",
-		component: Tab3_Cards,
-	},
-	{
-		path: "*", // путь в адресной строке
-		name: "notFound", // ключевое название страницы
-		component: NotFoundPage, // компонент для отрисовки
-	},
+    // Создаём маршруты (в виде объектов с тремя свойствами)
+    {
+        path: "/", // путь (то, что отображается в строке url)
+        name: "main", // ключевое название страницы (имя роута)
+        component: MainPage, // какой компонент отображать при введённом url
+    },
+    {
+        path: "/motors",
+        name: "motors",
+        component: ProductList,
+        props: { products: products.motors, }
+    },
+    {
+        path: "/motors/:id",
+        name: "ProductItem",
+        component: ProductItem,
+    },
+    {
+        path: "/propellers",
+        name: "propellers",
+        component: ProductList,
+        props: { products: products.propellers, }
+    },
+    {
+        path: "/propellers/:id",
+        name: "propellers",
+        component: ProductItem,
+    },
+    {
+        path: "/starters",
+        name: "starters",
+        component: ProductList,
+        props: { products: products.starters, }
+    },
+    {
+        path: "/starters/:id",
+        name: "starters",
+        component: ProductItem,
+    },
+    {
+        path: "*",
+        name: "notFound",
+        component: NotFoundPage,
+    },
 ];
 
 const router = new VueRouter({
-	// Создаём новый экземпляр вью-роутера
-	mode: "history",
-	base: "/", // Базовый URL приложения (сайта). В режиме разработки: '/'
-	routes,
+    // Создаём новый экземпляр вью-роутера
+    routes,
+    mode: "history",
+    base: "/", // Базовый URL приложения (сайта). В режиме разработки: '/'
 });
 
 export default router; // Экспортируем vue-router

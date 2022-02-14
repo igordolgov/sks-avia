@@ -2,11 +2,11 @@
 <template>
 	<div class="text-right button-styles">
 		<v-btn
-			href="#"
+			href="/"
 			@click.prevent="gotoPage('main')"
 			style="background-color: #069"
-			dark z-index="50"
-			class="mx-2 my-1 rounded-xl elevation-4"
+			dark
+			class="mx-2 my-1 rounded-lg elevation-8"
 		>
 			Назад
 		</v-btn>
@@ -37,10 +37,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 	.button-styles {
-		position: relative;
-		margin-bottom: -45px !important;
-		bottom: 50px !important;
+		position: fixed;
+		z-index: 5;
+		bottom: 9vh !important;
+		right: 12px;
 	}
 </style>
