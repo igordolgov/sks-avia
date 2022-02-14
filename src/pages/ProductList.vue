@@ -20,7 +20,7 @@
           <!-- Эффект при наведении на карточку -->
           <v-hover v-slot="{ hover }">
             <router-link
-              :to="{ name: 'ProductItem', params: { id: product.id } }"
+              :to="{ name: nextPageName, params: { id: product.id } }"
               class="text-decoration-none"
             >
               <v-card
@@ -93,6 +93,9 @@ export default {
     /* Входные параметры, получаемые из родительского компонента
     (в зависимости от того, какая вкладка выбрана) */
     products: {
+      type: String, // тип входного параметра
+    },
+    nextPageName: {
       type: String, // тип входного параметра
     },
   },

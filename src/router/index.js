@@ -22,7 +22,7 @@ const routes = [
         path: "/motors",
         name: "motors",
         component: ProductList,
-        props: { products: products.motors, }
+        props: { products: products.motors, nextPageName: "ProductItem" }
     },
     {
         path: "/motors/:id",
@@ -33,7 +33,7 @@ const routes = [
         path: "/propellers",
         name: "propellers",
         component: ProductList,
-        props: { products: products.propellers, }
+        props: { products: products.propellers, nextPageName: "ProductItem" }
     },
     {
         path: "/propellers/:id",
@@ -44,7 +44,7 @@ const routes = [
         path: "/starters",
         name: "starters",
         component: ProductList,
-        props: { products: products.starters, }
+        props: { products: products.starters, nextPageName: "ProductItem" }
     },
     {
         path: "/starters/:id",
