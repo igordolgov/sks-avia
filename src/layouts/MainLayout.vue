@@ -25,7 +25,7 @@ import AppSidebar from "@/components/AppSidebar";
 export default {
   // Название этого компонента
   name: "MainLayout",
-  
+
   data: () => ({}),
 
   // Указываем, какие компоненты использовать

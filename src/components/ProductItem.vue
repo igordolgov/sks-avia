@@ -6,7 +6,8 @@
     <v-card-text class="pa-3 text-body-2" style="line-height: 1.2">
       <v-row>
         <!-- Фотографии товара -->
-        <v-col cols="9" class="pa-0 mb-3">
+        <v-col cols="12" sm="7" md="8" xl="9"
+          class="pa-0 mb-3">
           <v-sheet
             class="
               cards-height
@@ -23,7 +24,7 @@
               v-model="model"
               height="100%"
               :aspect-ratio="1"
-              light
+              dark
               hide-delimiters
               class="pa-0"
             >
@@ -44,9 +45,9 @@
         <!-- Описание товара -->
         <v-col
           col="7"
-          sm="3"
+          sm="4"
           md="3"
-          xl="2"
+          xl="3"
           class="py-0 px-sm-0 pb-sm-3 pr-lg-0 mx-sm-0"
         >
           <v-sheet class="fill-height pa-2 mx-sm-auto elevation-10 rounded-lg">
@@ -112,7 +113,7 @@ export default {
 
   data() {
     return {
-      props: ["products"],
+      props: ["products", "nextPageName"],
       model: 0,
       product: null,
     };
