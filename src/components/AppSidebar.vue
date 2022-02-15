@@ -4,7 +4,9 @@
     <!-- cols=="8" означает - по умолчанию список занимает 8 из 12
 		md="3" - на ноутбуках ширина карточки 3 из 12
 		sm - планшет, md - ноутбук, md - настольный, lg - широкий экран -->
-    <v-col cols="4" sm="3" md="2" class="pa-0">
+    <!-- <ButtonBack /> -->
+
+    <v-col cols="12" sm="4" md="3" lg="2" class="pa-0 hidden-xs-only">
       <v-list class="px-2 px-sm-3 grey lighten-3 fill-height">
         <v-btn
           to="/"
@@ -32,7 +34,7 @@
           :key="tab.route"
           class="
             font-weight-bold
-            text-caption text-sm-body-2
+            text-body-1 text-sm-body-2
             rounded-lg
             pa-2
             mb-2
@@ -46,7 +48,7 @@
       </v-list>
     </v-col>
 
-    <v-col cols="8" sm="9" md="10" class="pa-0">
+    <v-col cols="12" sm="8" md="9" lg="10" class="pa-0">
       <!-- router-view это аналог слота, в который вставляются компоненты
         в зависимости от url введённого в адресной строке -->
       <router-view class="grey lighten-2" />
@@ -55,10 +57,13 @@
 </template>
 
 <script>
+// import ButtonBack from "@/components/ButtonBack";
 export default {
   name: "AppSidebar",
 
-  components: {},
+  components: {
+    // ButtonBack
+  },
 
   data: () => ({
     // Какие входные параметры принимает компонент
@@ -77,6 +82,19 @@ export default {
       {
         title: "Стартеры",
         route: "/starters",
+      },
+    ],
+
+    items: [
+      {
+        text: "Главная",
+        disabled: false,
+        href: "/",
+      },
+      {
+        text: "Назад",
+        disabled: false,
+        href: "breadcrumbs_link_1",
       },
     ],
   }),

@@ -62,7 +62,7 @@ const router = new VueRouter({
     // Создаём новый экземпляр вью-роутера
     routes,
     mode: "history",
-    base: "/sks-avia/", // Базовый URL приложения (сайта). В режиме разработки: '/'
+    base: "/", // Базовый URL приложения (сайта). В режиме разработки: '/'
 });
 
 export default router; // Экспортируем vue-router

@@ -8,11 +8,11 @@
 		md="3" - на ноутбуках ширина карточки 3 из 12
 		sm - планшет, md - ноутбук, md - настольный, lg - широкий экран -->
         <v-col
-          cols="12"
-          sm="4"
-          md="3"
+          cols="6"
+          sm="6"
+          md="4"
           lg="3"
-          xl="3"
+          xl="2"
           class="pa-1"
           v-for="product in products"
           :key="product.id"
@@ -96,7 +96,7 @@ export default {
       type: Array, // тип входного параметра
     },
     nextPageName: {
-      type: Array, // тип входного параметра
+      type: String, // тип входного параметра
     },
   },
 

@@ -6,7 +6,7 @@
     <v-card-text class="pa-3 text-body-2" style="line-height: 1.2">
       <v-row>
         <!-- Фотографии товара -->
-        <v-col cols="12" sm="7" md="8" xl="9" class="pa-0 mb-3">
+        <v-col cols="12" sm="8" md="9" xl="9" class="pa-0 mb-3">
           <v-sheet
             class="
               cards-height
@@ -16,7 +16,6 @@
               align-center
               grey
               lighten-2
-              elevation-10
             "
           >
             <v-carousel
@@ -43,13 +42,13 @@
 
         <!-- Описание товара -->
         <v-col
-          col="7"
+          cols="12"
           sm="4"
           md="3"
           xl="3"
           class="py-0 px-sm-0 pb-sm-3 pr-lg-0 mx-sm-0"
         >
-          <v-sheet class="fill-height pa-2 mx-sm-auto elevation-10 rounded-lg">
+          <v-sheet class="fill-height pa-2 mx-sm-auto rounded-lg">
             <!-- Название товара -->
             <span
               class="
