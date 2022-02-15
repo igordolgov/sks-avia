@@ -96,7 +96,7 @@ export default {
       type: Array, // тип входного параметра
     },
     nextPageName: {
-      type: String, // тип входного параметра
+      type: Array, // тип входного параметра
     },
   },
 

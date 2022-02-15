@@ -6,8 +6,7 @@
     <v-card-text class="pa-3 text-body-2" style="line-height: 1.2">
       <v-row>
         <!-- Фотографии товара -->
-        <v-col cols="12" sm="7" md="8" xl="9"
-          class="pa-0 mb-3">
+        <v-col cols="12" sm="7" md="8" xl="9" class="pa-0 mb-3">
           <v-sheet
             class="
               cards-height
@@ -113,20 +112,20 @@ export default {
 
   data() {
     return {
-      props: ["products", "nextPageName"],
+      props: ["products"],
       model: 0,
       product: null,
     };
   },
 
-  // Информация о товаре
   created() {
-    /* Фильтруем список товаров и оставляем тот товар, который просматриваем,
-      то есть у которого id совпадает с id переданным через входные параметры */
+    // запускаем цикл по ключам объекта products
     for (let key of Object.keys(products)) {
+      // в каждом ключе (массиве внутри products) пытаемся найти нужный id
       const product = products[key].find(
         (product) => product.id == this.$route.params.id
       );
+      // и если находим, то прерываем цикл
       if (product) {
         this.product = product;
         break;

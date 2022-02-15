@@ -22,33 +22,33 @@ const routes = [
         path: "/motors",
         name: "motors",
         component: ProductList,
-        props: { products: products.motors, nextPageName: "ProductItem" }
+        props: { products: products.motors, nextPageName: "motorsItem" }
     },
     {
         path: "/motors/:id",
-        name: "ProductItem",
+        name: "motorsItem",
         component: ProductItem,
     },
     {
         path: "/propellers",
         name: "propellers",
         component: ProductList,
-        props: { products: products.propellers, nextPageName: "ProductItem" }
+        props: { products: products.propellers, nextPageName: "propellersItem" }
     },
     {
         path: "/propellers/:id",
-        name: "propellers",
+        name: "propellersItem",
         component: ProductItem,
     },
     {
         path: "/starters",
         name: "starters",
         component: ProductList,
-        props: { products: products.starters, nextPageName: "ProductItem" }
+        props: { products: products.starters, nextPageName: "startersItem" }
     },
     {
         path: "/starters/:id",
-        name: "starters",
+        name: "startersItem",
         component: ProductItem,
     },
     {
@@ -62,7 +62,7 @@ const router = new VueRouter({
     // Создаём новый экземпляр вью-роутера
     routes,
     mode: "history",
-    base: "/", // Базовый URL приложения (сайта). В режиме разработки: '/'
+    base: "/sks-avia/", // Базовый URL приложения (сайта). В режиме разработки: '/'
 });
 
 export default router; // Экспортируем vue-router

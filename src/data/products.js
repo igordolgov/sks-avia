@@ -56,7 +56,7 @@
     ],
     propellers: [ // ПРОПЕЛЛЕРЫ
         {
-            id: 1,
+            id: 4,
             title: 'APC 7x7',
             condition: 'Новый',
             availability: 'В наличии: $ шт.',
@@ -68,7 +68,7 @@
             ]
         },
         {
-            id: 2,
+            id: 5,
             title: 'APC 7x8',
             condition: 'Новый',
             availability: 'В наличии: $ шт.',
@@ -80,7 +80,7 @@
             ]
         },
         {
-            id: 3,
+            id: 6,
             title: 'APC 7x9',
             condition: 'Новый',
             availability: 'В наличии: $ шт.',
@@ -92,7 +92,7 @@
             ]
         },
         {
-            id: 4,
+            id: 7,
             title: 'APC 8x3,8 Slowfly',
             condition: 'Новый',
             availability: 'В наличии: $ шт.',
@@ -104,7 +104,7 @@
             ]
         },
         {
-            id: 5,
+            id: 8,
             title: 'APC 8x4 Thin Electric',
             condition: 'Новый',
             availability: 'В наличии: $ шт.',
@@ -118,7 +118,7 @@
     ],
     starters: [ // СТАРТЕРЫ
         {
-            id: 1,
+            id: 9,
             title: 'Anderson PM-60',
             condition: 'Новый',
             description: 'Продается всё, что на фото; без резиновой вставки; в упаковке',
@@ -132,7 +132,7 @@
             ]
         },
         {
-            id: 2,
+            id: 10,
             title: 'Turbex L-APR 100',
             condition: 'Б/у',
             description: 'Продается всё, что на фото; есть оголенные места на проводах; без упаковки',
@@ -145,7 +145,7 @@
             ]
         },
         {
-            id: 3,
+            id: 11,
             title: 'HPI Nitro Start',
             condition: 'Б/у',
             description: 'Продается всё, что на фото; без вала; без упаковки',
@@ -157,7 +157,7 @@
             ]
         },
         {
-            id: 4,
+            id: 12,
             title: 'Team Losi Sport',
             condition: 'Новый',
             description: 'Продается всё, что на фото; без упаковки',
