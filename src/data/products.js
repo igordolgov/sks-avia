@@ -7,14 +7,17 @@
             description: 'Продается всё, что на фото; без упаковки',
             price: 4000,
             quantity: 0,
+            image: [
+                { src: '../sks-avia/img/engines/engine1-01.jpg' },
+            ],
             images: [
-                { src: '../img/engines/engine1-01.jpg' },
-                { src: '../img/engines/engine1-02.jpg' },
-                { src: '../img/engines/engine1-03.jpg' },
-                { src: '../img/engines/engine1-04.jpg' },
-                { src: '../img/engines/engine1-05.jpg' },
-                { src: '../img/engines/engine1-06.jpg' },
-                { src: '../img/engines/engine1-07.jpg' },
+                { src: '/sks-avia/img/engines/engine1-01.jpg' },
+                { src: '/sks-avia/img/engines/engine1-02.jpg' },
+                { src: '/sks-avia/img/engines/engine1-03.jpg' },
+                { src: '/sks-avia/img/engines/engine1-04.jpg' },
+                { src: '/sks-avia/img/engines/engine1-05.jpg' },
+                { src: '/sks-avia/img/engines/engine1-06.jpg' },
+                { src: '/sks-avia/img/engines/engine1-07.jpg' },
             ]
         },
         {
@@ -24,13 +27,16 @@
             description: 'Продается всё, что на фото; без упаковки',
             price: 6500,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/engines/engine2-01.jpg' },
+            ],
             images: [
-                { src: '../img/engines/engine2-01.jpg' },
-                { src: '../img/engines/engine2-02.jpg' },
-                { src: '../img/engines/engine2-03.jpg' },
-                { src: '../img/engines/engine2-04.jpg' },
-                { src: '../img/engines/engine2-05.jpg' },
-                { src: '../img/engines/engine2-06.jpg' },
+                { src: '/sks-avia/img/engines/engine2-01.jpg' },
+                { src: '/sks-avia/img/engines/engine2-02.jpg' },
+                { src: '/sks-avia/img/engines/engine2-03.jpg' },
+                { src: '/sks-avia/img/engines/engine2-04.jpg' },
+                { src: '/sks-avia/img/engines/engine2-05.jpg' },
+                { src: '/sks-avia/img/engines/engine2-06.jpg' },
             ]
         },
         {
@@ -40,17 +46,20 @@
             description: 'Продается всё, что на фото; в упаковке',
             price: 8000,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/engines/engine3-01.jpg' },
+            ],
             images: [
-                { src: '../img/engines/engine3-01.jpg' },
-                { src: '../img/engines/engine3-02.jpg' },
-                { src: '../img/engines/engine3-03.jpg' },
-                { src: '../img/engines/engine3-04.jpg' },
-                { src: '../img/engines/engine3-05.jpg' },
-                { src: '../img/engines/engine3-06.jpg' },
-                { src: '../img/engines/engine3-07.jpg' },
-                { src: '../img/engines/engine3-08.jpg' },
-                { src: '../img/engines/engine3-09.jpg' },
-                { src0: '../img/engines/engine3-10.jpg' },
+                { src: '/sks-avia/img/engines/engine3-01.jpg' },
+                { src: '/sks-avia/img/engines/engine3-02.jpg' },
+                { src: '/sks-avia/img/engines/engine3-03.jpg' },
+                { src: '/sks-avia/img/engines/engine3-04.jpg' },
+                { src: '/sks-avia/img/engines/engine3-05.jpg' },
+                { src: '/sks-avia/img/engines/engine3-06.jpg' },
+                { src: '/sks-avia/img/engines/engine3-07.jpg' },
+                { src: '/sks-avia/img/engines/engine3-08.jpg' },
+                { src: '/sks-avia/img/engines/engine3-09.jpg' },
+                { src0: '/sks-avia/img/engines/engine3-10.jpg' },
             ]
         }
     ],
@@ -63,8 +72,11 @@
             description: 'Продается всё, что на фото; в упаковке',
             price: 170,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/propellers/propeller1-01.jpg' },
+            ],
             images: [
-                { src: '../img/propellers/propeller1-01.jpg' },
+                { src: '/sks-avia/img/propellers/propeller1-01.jpg' },
             ]
         },
         {
@@ -75,8 +87,11 @@
             description: 'Продается всё, что на фото; в упаковке',
             price: 170,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/propellers/propeller2-01.jpg' },
+            ],
             images: [
-                { src: '../img/propellers/propeller2-01.jpg' },
+                { src: '/sks-avia/img/propellers/propeller2-01.jpg' },
             ]
         },
         {
@@ -87,8 +102,11 @@
             description: 'Продается всё, что на фото; в упаковке',
             price: 170,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/propellers/propeller3-01.jpg' },
+            ],
             images: [
-                { src: '../img/propellers/propeller3-01.jpg' },
+                { src: '/sks-avia/img/propellers/propeller3-01.jpg' },
             ]
         },
         {
@@ -99,8 +117,11 @@
             description: 'Продается всё, что на фото; в упаковке',
             price: 190,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/propellers/propeller4-01.jpg' },
+            ],
             images: [
-                { src: '../img/propellers/propeller4-01.jpg' },
+                { src: '/sks-avia/img/propellers/propeller4-01.jpg' },
             ]
         },
         {
@@ -111,8 +132,11 @@
             description: 'Продается всё, что на фото; в упаковке',
             price: 190,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/propellers/propeller5-01.jpg' },
+            ],
             images: [
-                { src: '../img/propellers/propeller5-01.jpg' },
+                { src: '/sks-avia/img/propellers/propeller5-01.jpg' },
             ]
         }
     ],
@@ -124,11 +148,14 @@
             description: 'Продается всё, что на фото; без резиновой вставки; в упаковке',
             price: 2000,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/starters/starter1-01.jpg' },
+            ],
             images: [
-                { src: '../img/starters/starter1-01.jpg' },
-                { src: '../img/starters/starter1-02.jpg' },
-                { src: '../img/starters/starter1-03.jpg' },
-                { src: '../img/starters/starter1-04.jpg' },
+                { src: '/sks-avia/img/starters/starter1-01.jpg' },
+                { src: '/sks-avia/img/starters/starter1-02.jpg' },
+                { src: '/sks-avia/img/starters/starter1-03.jpg' },
+                { src: '/sks-avia/img/starters/starter1-04.jpg' },
             ]
         },
         {
@@ -138,10 +165,13 @@
             description: 'Продается всё, что на фото; есть оголенные места на проводах; без упаковки',
             price: 1200,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/starters/starter2-01.jpg' },
+            ],
             images: [
-                { src: '../img/starters/starter2-01.jpg' },
-                { src: '../img/starters/starter2-02.jpg' },
-                { src: '../img/starters/starter2-03.jpg' },
+                { src: '/sks-avia/img/starters/starter2-01.jpg' },
+                { src: '/sks-avia/img/starters/starter2-02.jpg' },
+                { src: '/sks-avia/img/starters/starter2-03.jpg' },
             ]
         },
         {
@@ -151,9 +181,12 @@
             description: 'Продается всё, что на фото; без вала; без упаковки',
             price: 1500,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/starters/starter3-01.jpg' },
+            ],
             images: [
-                { src: '../img/starters/starter3-01.jpg' },
-                { src: '../img/starters/starter3-02.jpg' },
+                { src: '/sks-avia/img/starters/starter3-01.jpg' },
+                { src: '/sks-avia/img/starters/starter3-02.jpg' },
             ]
         },
         {
@@ -163,11 +196,14 @@
             description: 'Продается всё, что на фото; без упаковки',
             price: 2000,
             quantity: 1,
+            image: [
+                { src: '../sks-avia/img/starters/starter4-01.jpg' },
+            ],
             images: [
-                { src: '../img/starters/starter4-01.jpg' },
-                { src: '../img/starters/starter4-02.jpg' },
-                { src: '../img/starters/starter4-03.jpg' },
-                { src: '../img/starters/starter4-04.jpg' },
+                { src: '/sks-avia/img/starters/starter4-01.jpg' },
+                { src: '/sks-avia/img/starters/starter4-02.jpg' },
+                { src: '/sks-avia/img/starters/starter4-03.jpg' },
+                { src: '/sks-avia/img/starters/starter4-04.jpg' },
             ]
         },
     ]
